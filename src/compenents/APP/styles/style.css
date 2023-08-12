@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap');
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Ysabeau', sans-serif;
+	line-height: 1.5;
+	color: #393232;
+}
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    margin: 1.2em;
+}
+
+
+#monexo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Media queries pour le flex */
+
+@media screen and (max-width: 1024px) {
+    #monexo {
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #monexo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #monexo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.mon__exo {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+	max-width: 300px;
+    box-shadow: -1px -2px 5px #00000094;
+	border-radius: 15px;
+	overflow: hidden;
+	position: relative;
+	transition: .15s ease-in;
+    
+}
+/* .videogame__rate {
+    z-index: 2;
+    position: absolute;
+    top:10px;
+    right:5px;
+    filter: drop-shadow(3px 3px 3px #ffffff);
+} */
+
+/* .norate {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: red;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 255, 255);
+} */
+
+
+.mon__exo__image {
+    position: relative;
+	overflow: hidden;
+    text-align: center;
+}
+img {
+    min-width: 100%;
+    height: 300px;
+    vertical-align: middle;
+}
+
+
+.mon__exo__header {
+	margin-top: 0.2rem;
+	display: flex;
+	align-items: center;
+}
+h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+
+.mon__exo h2, .mon__exo__desc, .mon__exo__footer {
+    padding: 0rem 1.1rem;
+    margin-top: 1rem;
+}
+
+.mon__exo__desc {
+    position: relative;
+    overflow: hidden;
+    height: 14em;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+p {
+    -webkit-mask-image: linear-gradient(0deg, transparent 16px, red 90px);
+    height: 12em;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    background-color: #fff;
+
+    text-align: center;
+    width: 8em; /* Need a specific value to work */
+    padding: 0.1rem 0.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #040074;
+    cursor: pointer;
+}
+.read-more:hover {
+    color: #020041;
+}
+
+
+
+.mon__exo__footer {
+    display: flex;
+    flex-direction: row;
+	margin-top: 0.2rem;
+	border-top: 1px solid #ddd;
+    width: 95%;
+	padding: 0.5rem 0;
+	
+}
+
+.device {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.device__img  {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: auto;
+    margin-left: 2px;
+}
