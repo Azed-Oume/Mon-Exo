@@ -24,7 +24,7 @@ export const Card = () => {
                                 
                             </div>
                             <figure className="mon__exo__image"> 
-                                <img src= {game.gamePicture ? `/static/assets/img/games/${game.gamePicture}`: "/static/assets/img/noimg.png"} alt="Avatar" />
+                                <img src= {game.gamePicture ? `assets/img/games/${game.gamePicture}`: "assets/img/noimg.png"} alt="Avatar" />
                             </figure>
                                 <div className="mon__exo__header">
                                     <h2> {game.title} </h2>
@@ -40,7 +40,7 @@ export const Card = () => {
                                 <div className="mon__exo__footer">
                                     <span className="device">
                                         {game.devices.map((device, index) => (
-                                            <img className="device__img" src={`/static/assets/img/devices/${device}.png`} alt={device} key={index} />
+                                            <img className="device__img" src={`assets/img/devices/${device}.png`} alt={device} key={index} />
                                         ))}
                                         {game.devices[0] === undefined? <span className="no-device">Information Indisponible</span> : null}
                                     </span>
