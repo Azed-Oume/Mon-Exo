@@ -32,17 +32,17 @@ export const Card = () => {
                                 
                                 
                                 <div className="mon__exo__desc">
-                                    <p>{game.description && game.description.length > 200 ? game.description.slice(0, 200) + "..." : game.description}</p>
-                                        {game.description && game.description.length > 200 && (<div className="read-more">↓ Lire la suite</div>)}
+                                    <p>{game.description && game.description.length > 150 ? game.description.slice(0, 150) + "..." : game.description}</p>
+                                        {game.description && game.description.length > 150 && (<div className="read-more">↓ Lire la suite</div>)}
                                 </div>
 
                                 
                                 <div className="mon__exo__footer">
                                     <div className="device">
                                         {game.devices.map((device, index) => ( 
-                                        <div key={index}>
-                                            <img className="device__img" src={`assets/img/devices/${device}.png`} alt={device} key={index} />
-                                        </div>
+                                        <span key={index}>
+                                            <img key={index} className="device__img" src={`assets/img/devices/${device}.png`} alt={device}  />
+                                        </span>
                                         ))}
                                         {game.devices[0] === undefined? <div className="no-device">Information Indisponible</div> : null}
                                     </div>

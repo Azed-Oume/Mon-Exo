@@ -9,8 +9,11 @@ body {
 	line-height: 1.5;
 	color: #393232;
 }
-h1 {
-    font-size: 2rem;
+.title {
+    font-size: 3rem;
+    color: aqua;
+    border: solid gray 2px;
+    border-radius: 10px;
     text-align: center;
     font-weight: 600;
     line-height: 1.25;
