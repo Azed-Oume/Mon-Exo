@@ -122,8 +122,8 @@ h2 {
     height: 12em;
 } */
 p {
-    mask-image: linear-gradient(0deg, #0000 16px, red 90px);
-    -webkit-mask-image: linear-gradient(0deg, #0000 16px, red 90px); /* Pour les navigateurs basés sur WebKit */
+    -webkit-mask-image: linear-gradient(0deg, #0000 16px, red 90px);
+    mask-image: linear-gradient(0deg, #0000 16px, red 90px); /* Pour les navigateurs basés sur WebKit */
   }
   
 
@@ -163,13 +163,11 @@ p {
 
 .device {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 .device__img  {
     display: flex;
-    flex-direction: row;
     height: 30px;
     width: auto;
     margin-left: 2px;

@@ -29,7 +29,7 @@ export const Card = () => {
                                 <div className="mon__exo__header">
                                     <h2> {game.title} </h2>
                                 </div>
-                                src\compenents\img\games\ac_bf.jpg
+                                
                                 
                                 <div className="mon__exo__desc">
                                     <p>{game.description && game.description.length > 200 ? game.description.slice(0, 200) + "..." : game.description}</p>
@@ -38,12 +38,14 @@ export const Card = () => {
 
                                 
                                 <div className="mon__exo__footer">
-                                    <span className="device">
-                                        {game.devices.map((device, index) => (
+                                    <div className="device">
+                                        {game.devices.map((device, index) => ( 
+                                        <div key={index}>
                                             <img className="device__img" src={`assets/img/devices/${device}.png`} alt={device} key={index} />
+                                        </div>
                                         ))}
-                                        {game.devices[0] === undefined? <span className="no-device">Information Indisponible</span> : null}
-                                    </span>
+                                        {game.devices[0] === undefined? <div className="no-device">Information Indisponible</div> : null}
+                                    </div>
                                 </div>
 
                         </article>
